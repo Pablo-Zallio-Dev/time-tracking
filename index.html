@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+</head>
+
+<body>
+  <main>
+    <section class="container">
+      <!-- CARD PROFILE -->
+      <section class="profile__card">
+        <article class="profile__card__avatar">
+          <img src="./images/image-jeremy.png" alt="" class="avatar__image" />
+          <article class="avatar__name">
+            <p>Report for</p>
+            <h1>Jeremy Robson</h1>
+          </article>
+        </article>
+        <article class="profile__card__time">
+          <p id="btn-daily" class="time__item">Daily</p>
+          <p id="btn-weekly" class="time__item time__item--active">Weekly</p>
+          <p id="btn-monthly" class="time__item">Monthly</p>
+        </article>
+      </section>
+
+      <!-- CARDS ACTIVTY -->
+      <section class="card__grid">
+        <template id="template">
+          <section class="card">
+            <section class="card__activity">
+              <img src="./images/icon-work.svg" alt="" class="card__activity--icon" />
+            </section>
+  
+            <article class="card__activity__info">
+              <article class="info__title">
+                <p class="title__text"></p>
+                <img src="./images/icon-ellipsis.svg" alt="" />
+              </article>
+              <article class="info__data">
+                <p class="current__time"></p>
+                <p class="previus__time"></p>
+              </article>
+            </article>
+          </section>
+        </template>
+      </section>
+    </section>
+
+    <footer>
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
+        href="#">Your Name Here</a>.
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
